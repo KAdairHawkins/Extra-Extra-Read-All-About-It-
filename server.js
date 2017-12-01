@@ -48,7 +48,7 @@ app.use(bodyParser.urlencoded({
 
 
 //app.set('view engine', 'handlebars');
-const routes = require('./controller/controller.js');
+const routes = require('./app/controller/controller.js');
 app.use('/', routes);
 
 var PORT = 3001;
