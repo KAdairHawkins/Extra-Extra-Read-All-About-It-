@@ -40,14 +40,14 @@ app.use(bodyParser.urlencoded({
 //     });
 // }
 
-//Set up Handlebars to use later
-// app.use(methodOverride('_method'));
-// app.engine('handlebars', exphbs({
-//     defaultLayout: 'main'
-// }));
+
+ app.use(methodOverride('_method'));
+ app.engine('handlebars', exphbs({
+     defaultLayout: 'main'
+ }));
 
 
-//app.set('view engine', 'handlebars');
+app.set('view engine', 'handlebars');
 const routes = require('./app/controller/controller.js');
 app.use('/', routes);
 
