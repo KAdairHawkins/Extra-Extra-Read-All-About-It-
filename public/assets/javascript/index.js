@@ -48,8 +48,8 @@ $(document).ready(function() {
         "<div class='panel panel-default'>",
         "<div class='panel-heading'>",
         "<h3>",
-        "<a class='article-link' target='_blank' href='" + article.url + "'>",
-        article.headline,
+        "<a class='article-link' target='_blank' href='" + results.link + "'>",
+        results.title,
         "</a>",
         "<a class='btn btn-success save'>",
         "Save Article",
@@ -57,7 +57,7 @@ $(document).ready(function() {
         "</h3>",
         "</div>",
         "<div class='panel-body'>",
-        article.summary,
+        result2.summary,
         "</div>",
         "</div>"
       ].join("")
