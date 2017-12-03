@@ -27,14 +27,14 @@ $(document).ready(function() {
     });
   }
 
-  function renderArticles(articles) {
+  function renderArticles(results) {
     // This function handles appending HTML containing our article data to the page
     // We are passed an array of JSON containing all available articles in our database
     var articlePanels = [];
     // We pass each article JSON object to the createPanel function which returns a bootstrap
     // panel with our article data inside
-    for (var i = 0; i < articles.length; i++) {
-      articlePanels.push(createPanel(articles[i]));
+    for (var i = 0; i < results.length; i++) {
+      articlePanels.push(createPanel(results[i]));
     }
     // Once we have all of the HTML for the articles stored in our articlePanels array,
     // append them to the articlePanels container
